@@ -108,7 +108,7 @@ body {
 }
 #home {
   background-image: url("img/home.png.jpg");
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   background-position: top 10% right -20rem;
   background-size: cover;
@@ -659,13 +659,15 @@ footer .col a {
   background-image: url("img/banner/blog");
   background-size: cover;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-position-y: -13em;
   text-align: center;
   justify-self: center;
   display: flex;
   flex-direction: column;
-  padding: 4em;
+  /* padding: 4em; */
+  align-items: center;
+  justify-content: center;
 }
 #page-header .read {
   text-align: center;
@@ -755,6 +757,7 @@ footer .col a {
   padding: 0.5em;
   font-size: 1.5em;
   animation: slideLeft 0.5s linear forwards;
+  margin: a;
 }
 
 #about-head {
@@ -804,7 +807,8 @@ footer .col a {
 }
 #page-header .para {
   padding: 1.5em;
-  color: currentColor;
+  color: white;
+  font-weight: bolder;
 }
 #contact-details i {
   font-size: 1em;
@@ -824,7 +828,7 @@ footer .col a {
 }
 #contact-details h3 {
   position: relative;
-  bottom: 4em;
+  bottom: 2em;
 }
 #contact-details i {
   position: relative;
@@ -832,22 +836,20 @@ footer .col a {
   padding: 0.5em 0;
 }
 #contact-details .details {
-  width: 50%;
+  width: 100%;
+  font-size: 1.5em;
 }
 #contact-details {
   display: flex;
   margin-top: 9em;
 }
 #contact-details .map {
-  width: 140%;
-  position: absolute;
-  top: 35em;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 100%;
   margin: auto;
-  display: block;
-  height: 400px;
+  transform: translateX(0%);
+  overflow: hidden;
+  overflow: none;
 }
 #form-details {
   display: flex;
@@ -1117,7 +1119,7 @@ footer .col a {
     right: 1em;
   }
   #page-header.blog {
-    background-position-y: 0em;
+    background-position-y: -8em;
   }
   #form-details {
     margin: 12px;
@@ -1187,8 +1189,8 @@ footer .col a {
   #contact-details .map {
     position: sticky;
     width: 100%;
+    overflow: hidden;
     overflow: none;
-    overflow: auto;
   }
   #contact-details .details {
     width: 100%;
@@ -1265,7 +1267,10 @@ footer .col a {
     height: 40vh;
   }
   #page-header.blog {
-    height: 40vh;
+    height: 30vh;
+  }
+  #page-header.blog {
+    background-position-y:0 ;
   }
   #page-header.shop {
     height: 40vh;
@@ -1633,7 +1638,7 @@ footer .col a {
   #product1 .pro .bx.bxs-cart.cart {
     font-size: 0.7em;
     width: 20px;
-    top: 14.3em;
+    bottom: 10px;
     right: 1em;
     position: absolute;
     height: 20px;
@@ -1700,7 +1705,7 @@ footer .col a {
     padding: 0 0;
     margin: 0 0;
     font-size: 0.7em;
-    background-color: rgb(246, 243, 243);
+    color: ba;
   }
   #cart-add.section-p1 {
     padding: 48px 25px;
