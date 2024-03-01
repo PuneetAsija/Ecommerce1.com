@@ -195,15 +195,17 @@ body {
 #feature .box:nth-child(6) h6 {
   background-color: #c3e3e1;
 }
-
 #product1 {
   text-align: center;
+  margin: 1.5em 0;
 }
 #product1 .container {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 0 1em;
+  grid-template-columns: auto auto auto auto;
+  margin: 0em 0.5em;
+  padding: 1em;
+  height: 106%;
 }
 #product1 p {
   font-size: 1.4rem;
@@ -211,14 +213,24 @@ body {
   color: grey;
   position: relative;
   bottom: 0.1em;
-  animation: slideLeft 0.5s linear forwards;
 }
 #product1 h2 {
   position: relative;
   bottom: 0.1em;
+  color: rgb(219, 43, 43);
   font-size: 4rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 0 5px 10px 5px red;
+}
+#product1 .latest {
+  position: relative;
+  bottom: 0.1em;
+  color: orangered;
+  font-size: 4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 0 5px 10px 5px orange;
 }
 #product1 .pro {
   width: 10%;
@@ -231,7 +243,6 @@ body {
   margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
-  animation: slideTop 0.5s linear forwards;
 }
 #product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(183, 174, 174, 0.06);
@@ -240,8 +251,7 @@ body {
 #product1 .pro img {
   width: 100%;
   border-radius: 50px;
-  height: 40vh;
-  animation: slideRight 0.5s linear forwards;
+  height: 35vh;
 }
 
 #product1 .pro .des {
@@ -261,11 +271,12 @@ body {
 }
 #product1 .pro .des i {
   color: rgb(234, 83, 28);
-  animation: slideLefft 0.5s linear forwards;
 }
 #product1 .pro .des h4 {
   padding-top: 7px;
   font-size: 20px;
+  position: absolute;
+  bottom: 15px;
   font-weight: 700;
   color: #088178;
   animation: slideRight 0.5s linear forwards;
@@ -282,9 +293,8 @@ body {
   font-weight: 500;
   border: 1px solid #c3e3e1;
   position: absolute;
-  right: 28px;
-  bottom: 12px;
-  animation: slideLeft 0.5s linear forwards;
+  right: 10px;
+  bottom: 5px;
 }
 #product1 .pro .bx.bxs-cart.cart:hover {
   color: white;
@@ -1044,7 +1054,7 @@ footer .col a {
   background-color: white;
 }
 
-@media only screen and (max-width: 1045px) {
+@media only screen and (max-width: 1245px) {
   #banner {
     height: 30vh;
   }
@@ -1263,6 +1273,10 @@ footer .col a {
     display: grid;
     grid-template-columns: auto auto;
     margin: 0 1.5em;
+  }
+  #contact-details .details {
+    width: 100%;
+    font-size: 1em;
   }
   #page-header.contact {
     height: 30vh;
