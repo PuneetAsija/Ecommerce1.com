@@ -107,7 +107,7 @@ body {
   left: 20px;
 }
 #home {
-  background-image: url("img/home.png.jpg");
+  background-image: url("./img/home.png.jpg");
   height: 60vh;
   width: 100%;
   background-position: top 10% right -20rem;
@@ -548,7 +548,8 @@ footer .col a {
   animation: slideLeft 0.5s linear forwards;
 }
 .copyright p {
-  display: block;
+  display: flex;
+  /* background-color: #000; */
   margin: auto;
   position: relative;
   bottom: 1.5em;
@@ -1024,6 +1025,9 @@ footer .col a {
   color: #222;
   font-size: 25px;
   display: none;
+}
+.copyright span{
+  color: orangered;
 }
 #lg-bag {
   display: block;
