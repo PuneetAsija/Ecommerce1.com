@@ -805,13 +805,12 @@ footer .col a {
 #page-header.contact {
   background-image: url("img/banner/45.png");
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
   justify-self: center;
   display: flex;
   flex-direction: column;
-  padding: 4em;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 #page-header h2 {
   color: white;
@@ -849,10 +848,12 @@ footer .col a {
 #contact-details .details {
   width: 100%;
   font-size: 1.5em;
+  width: 100vw;
 }
 #contact-details {
   display: flex;
   margin-top: 9em;
+  background-color: #dbedec;
 }
 #contact-details .map {
   position: relative;
